@@ -49,7 +49,7 @@ app.get("/products", (req, res) => {
 });
 
 app.get("/products/:idProduct", (req, res) => {
-  let idProduct = req.params.idProduct;
+  let idProduct = parseInt(req.params.idProduct);
   //console.log(idProduct);
 
   let productListHTML = "";
